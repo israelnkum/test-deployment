@@ -1,0 +1,14 @@
+:root {
+    --color-white: #fff;
+    --color-gray: #808080;
+    --color-gray-reduced: rgb(191, 191, 191);
+    --color-main: #2699fb;
+    --color-primary: #26c9fb;
+    --color-violetblue: #892be250;
+
+    --color-footer: #200E00;
+	 --color-copyriht: #150900;
+     --color-secondary-opacity: rgba(218, 213, 209, 0.3);
+     --color-secondary: #DA6808;
+     --color-black: #000;
+}

@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--color-gray);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    background-color: aqua;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 10px 0;
+    background-color: var(--color-violetblue);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__brand {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar__brand-logo {
+    width: 50px;
+}
+
+.navbar__brand-name {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar__brand-first {
+    color: var(--color-gray);
+    font-size: 1em;
+    font-family: "Physiotherapy", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+  color: var(--color-black);
+}
+
+.navbar__brand-first:hover {
+    color: var(--color-white);
+}
+
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px var(--color-gray);
+}
+
+.navbar__link {
+    text-decoration: none;
+    padding: 7px 20px;
+    color: var(--color-black);
+    border-radius: 5px;
+    transition: background-color .5s ease-in;
+    text-transform: uppercase;
+}
+
+.navbar__link:hover {
+    
+    color: blueviolet;
+}

@@ -1,0 +1,275 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--color-gray);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.navbar {
+    padding: 10px 0;
+    background-color: var(--color-violetblue);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__brand {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.navbar__brand-logo {
+    width: 50px;
+}
+
+.navbar__brand-name {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar__brand-first {
+    color: var(--color-gray);
+    font-size: 1em;
+    font-family: "Physiotherapy", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+  color: var(--color-black);
+}
+
+.navbar__brand-first:hover {
+    color: var(--color-white);
+}
+
+.navbar__nav {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px var(--color-gray);
+}
+
+.navbar__link {
+    text-decoration: none;
+    padding: 7px 20px;
+    color: var(--color-black);
+    border-radius: 5px;
+    transition: background-color .5s ease-in;
+    text-transform: uppercase;
+}
+
+.navbar__link:hover {
+    
+    color: blueviolet;
+}
+
+.hero {
+    height: 400px;
+    display: flex;
+    background: url(../physio/physio-8.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero .container {
+    text-align: center;
+    position: relative;
+}
+
+.hero__heading {
+    font-size: 3.235em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.hero__info {
+    color: var( --color-secondary);
+    padding: 10px;
+}
+
+.hero__link {
+    text-decoration: none;
+    padding: 7px 60px;
+    background-color: var(--color-main);
+    color: var(--color-black);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hero__link:hover {
+    transition: 0.1s ease-in;
+    background-color: var(--color-secondary);
+}
+
+.about__us {
+   padding-top: 20px;
+   padding-bottom: 40px;
+}
+
+.about__us .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: solid beige;
+    margin-top: -70px;
+    background-color: var(--color-primary);
+    justify-content: space-evenly;
+}
+
+.about__us-heading {
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about__us-container {
+    border: solid beige;
+    background-color: var(--color-gray-reduced);
+}
+
+.hero__brand-story {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.brand__img {
+    float: left;
+    width: 500px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-right: 5px;
+}
+
+.hero__brand-story-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.hero__brand-story-heading:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .hero__brand-story-heading:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .footer_container {
+    background-color: var(--color-footer);
+    padding: 4rem 0 4rem 0;
+}
+
+.footer {
+    width: 80%;
+    height: 40vh;
+    background-color: var(--color-footer);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    margin: 0 auto;
+}
+
+.footer_heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer_heading h2 {
+    margin-bottom: 2rem;
+    color: var(--color-gray);
+}
+
+.footer_heading a {
+    color: var(--color-white);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.Contact_icon {
+    color: var(--color-secondary);
+}
+
+.footer_heading a:hover {
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.footer__email h2 {
+    margin-bottom: 2rem;
+    color: var(--color-gray);
+}
+
+#footer__email {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer__email::placeholder {
+    color: var(--color-gray);
+}
+
+#footer__email_btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    outline: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+#footer__email_btn:hover {
+    cursor: pointer;
+    background-color: var(--color-main);
+    transition:  all 0.4s ease-out;
+}
+
+.top_social a {
+    display: inline-block;
+    padding: 6px 10px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.top_social a:hover {
+    color: red;
+    transition: 0.5s ease-out;
+}
+
+.bottom {
+    text-align: center;
+}
